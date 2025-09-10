@@ -7,7 +7,11 @@
   <style>
     height: 100vh;
   }
-  </style>
+.section1{background-color: #8899cc;}
+.section1{background-color: #cc8899;}
+.section1{background-color: #88cc99;}
+.section1{background-color: #993388;}
+</style>
 </head>
 <body>
   <h1>문서내 하이퍼링크</h1>
@@ -18,11 +22,19 @@
       <p>책갈피넣기</p>
       <p>문서내 이동하고 싶은 부분의 태그에 id 지정</p>
       </li>
+      <li>
+        <p>책갈피 지정한 id를 href지정</p>
+        <p>&it;a href="#아이디명"&gt;</p>
+        </li>
     </ol>
   </div>
   <h2>목차</h2>
   <ul>
-    <li></li>
+    <li><a href="#section1">section1</a></li>
+    <li><a href="#section2">section2</a></li>
+    <li><a href="#section3">section3</a></li>
+    <li><a href="#section4">section4</a></li>
+
     </ul>
   <section id="section1" class="section1">
     <div>section1</div>
@@ -36,5 +48,16 @@
   <section class="section4">
     <div>section4</div>
   </section>
+  <div> class="gotop"
+    <a href="#">위로</a>
+    </div>
+    <style>
+      .gotop{
+        position: fixed;
+        botten: 100px; right: 100px;
+        padding: 20px;
+        background-color: rgba(255,255,255,0.5);
+      }
+    </style>
 </body>
 </html>
